@@ -1,7 +1,7 @@
 import socket
 import time
 
-def port_tara(target, firstPort, lastPort):
+def scanPort(target, firstPort, lastPort):
     print(f"target IP: {target}")
     print(f"Port Range: {firstPort} - {lastPort}")
     print("-" * 40)
@@ -25,4 +25,4 @@ if __name__ == "__main__":
     firstPort = int(input("Enter the start port: "))
     lastPort = int(input("Enter the end port: "))
 
-    port_tara(target, firstPort, lastPort)
+    scanPort(target, firstPort, lastPort)
