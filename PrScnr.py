@@ -4,14 +4,13 @@ import argparse
 from assets.font.font import *
 import random
 
-
 print((random.choice(Font)))
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-t", "--target", dest="target", help="target ip")
-    parser.add_argument("-fp", "--firstport", dest="firstport", help="start port")
-    parser.add_argument("-lp", "--lastport", dest="lastport", help="end port")
+    parser.add_argument("-t", "--target", dest="target", help="Use to specify the target IP")
+    parser.add_argument("-fp", "--firstport", dest="firstport", help="Use to specify the start port")
+    parser.add_argument("-lp", "--lastport", dest="lastport", help="use to specify the end port")
     return parser.parse_args()
 
 def scanPort(target, firstPort, lastPort):
