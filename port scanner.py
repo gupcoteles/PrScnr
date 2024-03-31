@@ -1,8 +1,16 @@
 import socket
 import time
+import argparse
 
-def port_tara(target, firstPort, lastPort):
-    print(f"target IP: {target}")
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-t", "--target", dest="target", help="target ip")
+    parser.add_argument("-fp", "--firstport", dest="firstport", help="start port")
+    parser.add_argument("-lp", "--lastport", dest="lastport", help="end port")
+    return parser.parse_args()
+
+def scanPort(target, firstPort, lastPort):
+    print(f"Target IP: {target}")
     print(f"Port Range: {firstPort} - {lastPort}")
     print("-" * 40)
 
@@ -21,8 +29,5 @@ def port_tara(target, firstPort, lastPort):
             s.close()
 
 if __name__ == "__main__":
-    target = input("Enter the IP address of the target: ")
-    firstPort = int(input("Enter the start port: "))
-    lastPort = int(input("Enter the end port: "))
-
-    port_tara(target, firstPort, lastPort)
+    args = main()
+    scanPort(args.target, int(args.firstport), int(args.lastport))
