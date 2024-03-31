@@ -11,7 +11,7 @@ python3 -m pip install -r requirements.txt
 # Usage
 
 ```
-python3 "port scanner.py" -h
+python3 PrScnr.py -h
 ```
 
 This will display help for the tool. Here are all the switches it supports.
