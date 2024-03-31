@@ -1,6 +1,11 @@
 import socket
 import time
 import argparse
+from assets.font.font import *
+import random
+
+
+print((random.choice(Font)))
 
 def main():
     parser = argparse.ArgumentParser()
