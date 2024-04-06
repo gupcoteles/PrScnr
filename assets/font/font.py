@@ -28,7 +28,7 @@ Slant = """
                                      by: gupcoteles
 """
 
-qwe = r"""
+TrDACII = r"""
  ________    ________      ________       ________      ________       ________     
 |\   __  \  |\   __  \    |\   ____\     |\   ____\    |\   ___  \    |\   __  \    
 \ \  \|\  \ \ \  \|\  \   \ \  \___|_    \ \  \___|    \ \  \\ \  \   \ \  \|\  \   
@@ -40,4 +40,4 @@ qwe = r"""
                                                                             by: gupcoteles                             
 """
 
-Font = [Roman, Big, Slant, qwe]
+Font = [Roman, Big, Slant, TrDACII]
