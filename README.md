@@ -1,4 +1,4 @@
-# Port Scanner
+# PrScnr
 
 a simple port scanning tool
 
